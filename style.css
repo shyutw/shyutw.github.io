@@ -1,140 +1,62 @@
-/* =========================================
-   變數管理區 (要改顏色都在這裡改)
-   ========================================= */
-:root {
-    --bg-main: #0d1117;
-    --text-main: #c9d1d9;
-    --text-title: #ffffff;
-    --text-muted: #8b949e;
-    --brand-blue: #58a6ff;
-    --brand-blue-hover: #1f6feb;
-    --card-bg: rgba(22, 27, 34, 0.7);
-    --border-color: rgba(48, 54, 61, 0.5);
-}
-
-/* =========================================
-   全域基礎設定
-   ========================================= */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: var(--bg-main);
-    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f6f8fa;
+    color: #24292f;
     line-height: 1.6;
     padding: 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
-
 h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--text-title);
+    color: #0969da;
 }
-
-.status-msg {
-    text-align: center;
-    width: 100%;
-}
-
-/* =========================================
-   頁首導覽列
-   ========================================= */
-.top-nav {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.nav-brand {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--brand-blue);
-}
-
-.nav-btn {
-    background-color: #21262d;
-    color: var(--brand-blue);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-.nav-btn:hover {
-    background-color: var(--brand-blue-hover);
-    color: var(--text-title);
-    border-color: var(--brand-blue-hover);
-    box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
-}
-
-/* =========================================
-   專案卡片區塊
-   ========================================= */
 #repo-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 }
-
 .repo-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(8px);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
     padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .repo-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    border-color: var(--brand-blue);
-    box-shadow: 0 8px 16px rgba(88, 166, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 .repo-name {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
-
 .repo-name a {
-    color: var(--brand-blue);
+    color: #0969da;
     text-decoration: none;
 }
-
 .repo-name a:hover {
     text-decoration: underline;
 }
-
 .repo-desc {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: #57606a;
     margin-bottom: 1rem;
     min-height: 2.7rem;
 }
-
 .repo-meta {
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: #57606a;
     display: flex;
     gap: 1rem;
 }
-
 .language-dot {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--brand-blue);
+    background-color: #57606a;
     margin-right: 4px;
 }
