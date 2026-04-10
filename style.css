@@ -1,104 +1,120 @@
+/* 全域設定與深色背景 */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f6f8fa;
-    color: #24292f;
+    background-color: #0d1117; /* 科技深灰色 */
+    color: #c9d1d9; /* 亮灰色文字 */
     line-height: 1.6;
     padding: 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #0969da;
-}
-#repo-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-.repo-card {
-    background: white;
-    border: 1px solid #d0d7de;
-    border-radius: 6px;
-    padding: 1.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.repo-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.repo-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-.repo-name a {
-    color: #0969da;
-    text-decoration: none;
-}
-.repo-name a:hover {
-    text-decoration: underline;
-}
-.repo-desc {
-    font-size: 0.9rem;
-    color: #57606a;
-    margin-bottom: 1rem;
-    min-height: 2.7rem;
-}
-.repo-meta {
-    font-size: 0.8rem;
-    color: #57606a;
-    display: flex;
-    gap: 1rem;
-}
-.language-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #57606a;
-    margin-right: 4px;
+    color: #ffffff;
 }
 
 /* =========================================
-   新增的導覽列 (Navigation Bar) 樣式
+   頁首導覽列 (Navigation Bar) 樣式
    ========================================= */
 .top-nav {
-    background-color: #ffffff;
-    border: 1px solid #d0d7de;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); /* 深色漸層背景 */
+    border: 1px solid #30363d;
     border-radius: 8px;
     padding: 1rem 1.5rem;
     display: flex;
-    justify-content: space-between; /* 讓標題(左)和按鈕(右)自動分開 */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .nav-brand {
     font-weight: 700;
     font-size: 1.25rem;
-    color: #24292f;
+    color: #58a6ff; /* 亮藍色 */
     letter-spacing: 0.5px;
 }
 
 .nav-btn {
-    background-color: #f6f8fa;
-    color: #24292f;
+    background-color: #21262d;
+    color: #58a6ff;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 600;
     padding: 0.5rem 1rem;
-    border: 1px solid #d0d7de;
+    border: 1px solid #30363d;
     border-radius: 6px;
-    transition: all 0.2s ease; /* 讓滑鼠移過去的變色效果更滑順 */
+    transition: all 0.2s ease;
 }
 
-/* 滑鼠移到按鈕上方時的效果 */
 .nav-btn:hover {
-    background-color: #0969da; /* 變成 GitHub 藍色 */
+    background-color: #1f6feb;
     color: #ffffff;
-    border-color: #0969da;
-    box-shadow: 0 3px 6px rgba(9, 105, 218, 0.2);
+    border-color: #1f6feb;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.5); /* 螢光藍光暈 */
+}
+
+/* =========================================
+   專案卡片網格與磨砂玻璃質感
+   ========================================= */
+#repo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.repo-card {
+    background: rgba(22, 27, 34, 0.7); /* 半透明深色背景 */
+    backdrop-filter: blur(8px); /* 毛玻璃模糊效果 */
+    border: 1px solid rgba(48, 54, 61, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.repo-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 16px rgba(88, 166, 255, 0.15);
+}
+
+.repo-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.repo-name a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.repo-name a:hover {
+    text-decoration: underline;
+}
+
+.repo-desc {
+    font-size: 0.9rem;
+    color: #8b949e;
+    margin-bottom: 1rem;
+    min-height: 2.7rem;
+}
+
+.repo-meta {
+    font-size: 0.8rem;
+    color: #8b949e;
+    display: flex;
+    gap: 1rem;
+}
+
+.language-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #58a6ff;
+    margin-right: 4px;
 }
