@@ -7,3 +7,9 @@
 ![Microsoft](https://img.shields.io/badge/Microsoft-MIEE-20232A?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0078D4)
 ![GIGABYTE](https://img.shields.io/badge/GIGABYTE-Guest_Instructor-20232A?style=for-the-badge&logo=gigabyte&logoColor=white&labelColor=0059A7)
 ![ViewSonic](https://img.shields.io/badge/ViewSonic-Certified_Trainer-20232A?style=for-the-badge&logo=viewsonic&logoColor=white&labelColor=990000)
+
+## Professional Certifications
+- Microsoft：Microsoft Certified Educator (MCE), MIE Expert (MIEE)
+- UNESCO：ICT in Education, OER (開放教育資源) 認證
+- ViewSonic：認證講師 (ViewSonic Educator)
+- 教育認證：台灣實驗教育工作者培育計畫
