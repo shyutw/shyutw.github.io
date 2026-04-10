@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eastin's Repositories</title>
-    
+    <title>我的現代化 GitHub 首頁</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="./main.js"></script>
 </head>
 <body>
+    <header>
+        <h1>歡迎來到我的開源世界 🚀</h1>
+    </header>
 
-    <h1>🚀 My Code Repositories</h1>
-    <div id="repo-container">
-        <p style="text-align:center; width:100%;">正在載入專案資料...</p>
-    </div>
-
-    <script src="script.js"></script>
-
+    <main>
+        <section class="card">
+            <h2>我最新的 GitHub 專案</h2>
+            <ul id="repo-list">
+                <li>🔄 正在從 GitHub API 抓取資料...</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
