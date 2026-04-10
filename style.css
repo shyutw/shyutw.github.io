@@ -2,19 +2,20 @@
     --primary: #0969da;
     --bg: #f6f8fa;
     --card: #ffffff;
-    --text: #24292f;
-    --muted: #57606a;
-    --border: rgba(27, 31, 36, 0.15);
+    --text: #1f2328;
+    --muted: #636c76;
+    --border: #d0d7de;
+    --shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
 }
 
-/* 自動偵測系統深色模式 */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #0d1117;
         --card: #161b22;
-        --text: #c9d1d9;
+        --text: #f0f6fc;
         --muted: #8b949e;
-        --border: rgba(240, 246, 252, 0.1);
+        --border: #30363d;
+        --shadow: 0 8px 24px rgba(0,0,0,0.4);
     }
 }
 
@@ -23,50 +24,80 @@ body {
     background-color: var(--bg);
     color: var(--text);
     margin: 0;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
+    padding: 40px 20px;
 }
 
-.container { width: 100%; max-width: 900px; }
+/* 讓容器更寬，解決兩邊空白過多的問題 */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-header { text-align: center; margin-bottom: 3rem; }
+header {
+    margin-bottom: 4rem;
+    text-align: center;
+}
 
-h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; }
 
-/* RWD 核心：自動換行網格 */
+/* 網格優化：增大間距 (Gap) 解決擠迫感 */
 .grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 1.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 2rem; 
 }
 
 .repo-card {
     background: var(--card);
-    padding: 1.5rem;
-    border-radius: 10px;
+    padding: 1.8rem;
+    border-radius: 12px;
     border: 1px solid var(--border);
-    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow);
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* 讓內容均勻分布 */
+    min-height: 180px; /* 固定最小高度，視覺更整齊 */
 }
 
 .repo-card:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-8px); 
     border-color: var(--primary);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
 .repo-card a { 
     color: var(--primary); 
     text-decoration: none; 
-    font-weight: 700; 
-    font-size: 1.2rem; 
-    margin-bottom: 0.5rem;
+    font-weight: 600; 
+    font-size: 1.3rem; 
+    display: block;
+    margin-bottom: 0.8rem;
 }
 
-.repo-card p { font-size: 0.9rem; color: var(--muted); flex-grow: 1; margin-bottom: 1rem; }
+.repo-card p { 
+    font-size: 0.95rem; 
+    color: var(--muted); 
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
 
-.meta { font-size: 0.8rem; color: var(--muted); display: flex; gap: 1rem; }
+/* 底部數據資訊 */
+.meta { 
+    display: flex; 
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.85rem; 
+    color: var(--muted); 
+    font-weight: 500;
+}
 
-.loading { text-align: center; grid-column: 1 / -1; padding: 3rem; color: var(--muted); }
+/* 模擬 GitHub 的語言圓點 */
+.lang-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--primary);
+    margin-right: 4px;
+}
