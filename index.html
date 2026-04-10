@@ -6,37 +6,33 @@
     <title>Eastin's Hub</title>
     
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header class="top-nav">
+    <nav class="top-nav">
         <div class="nav-brand">Eastin's Hub</div>
-        <nav class="nav-links">
+        <div class="nav-links">
             <a href="https://shyutw.github.io/teec" target="_blank" class="nav-btn">🔗 前往 TEEC 專案</a>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section style="margin-bottom: 5rem;">
-            <h1>🌟 TEEC & Web Projects</h1>
-            <div id="teec-container">
-                <p class="status-msg">正在載入專案資料...</p>
-            </div>
-        </section>
-
-        <section>
-            <h1>🚀 My Code Repositories</h1>
-            <div id="repo-container">
-                <p class="status-msg">正在載入專案資料...</p>
-            </div>
-        </section>
-    </main>
+    <h1>🚀 My Code Repositories</h1>
+    
+    <div id="repo-container">
+        <p style="text-align:center; width:100%;">正在載入專案資料...</p>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 800, once: true });
+        // 初始化動畫設定
+        AOS.init({
+            duration: 800, // 動畫持續時間 0.8 秒
+            once: true,    // 每個卡片只執行動畫一次
+        });
     </script>
 
 </body>
