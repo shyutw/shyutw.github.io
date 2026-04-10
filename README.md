@@ -5,5 +5,5 @@
 
 ## 👨‍🏫 Professional Affiliations
 1. ![Microsoft](https://img.shields.io/badge/Microsoft-MIEE-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
-2. ![GIGABYTE](https://img.shields.io/badge/GIGABYTE-Guest_Instructor-000000?style=for-the-badge&logo=gigabyte&logoColor=white)
+2. ![GIGABYTE](https://img.shields.io/badge/GIGABYTE-Guest_Instructor-0059A7?style=for-the-badge&logo=gigabyte&logoColor=white)
 3. ![ViewSonic](https://img.shields.io/badge/ViewSonic-Certified_Trainer-990000?style=for-the-badge&logo=viewsonic&logoColor=white)
