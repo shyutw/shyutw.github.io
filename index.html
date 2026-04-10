@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的現代化 GitHub 首頁</title>
+    <title>My Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="./main.js"></script>
 </head>
 <body>
-    <header>
-        <h1>歡迎來到我的開源世界 🚀</h1>
-    </header>
-
-    <main>
-        <section class="card">
-            <h2>我最新的 GitHub 專案</h2>
-            <ul id="repo-list">
-                <li>🔄 正在從 GitHub API 抓取資料...</li>
-            </ul>
-        </section>
-    </main>
+    <div class="container">
+        <header>
+            <h1>My Open Source Projects</h1>
+            <p>自動同步自 GitHub API 最新動態</p>
+        </header>
+        <main id="repo-list" class="grid">
+            <p class="loading">📡 正在連接 GitHub 衛星...</p>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
