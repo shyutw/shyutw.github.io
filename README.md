@@ -4,8 +4,8 @@
 3. 對我而言，科技的意義在於釋放雙手，讓教育回歸人與人的陪伴。
 
 ## 👨‍🏫 Professional Affiliations
-![Microsoft](https://img.shields.io/badge/--MIEE-0078D4?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=white)
+![Microsoft](https://img.shields.io/badge/_-MIEE-0078D4?style=for-the-badge&logo=microsoft&logoColor=0078D4&labelColor=white)
 
-![GIGABYTE](https://img.shields.io/badge/--Guest_Instructor-0059A7?style=for-the-badge&logo=gigabyte&logoColor=white&labelColor=white)
+![GIGABYTE](https://img.shields.io/badge/_-Guest_Instructor-0059A7?style=for-the-badge&logo=gigabyte&logoColor=0059A7&labelColor=white)
 
-![ViewSonic](https://img.shields.io/badge/--Certified_Trainer-990000?style=for-the-badge&logo=viewsonic&logoColor=white&labelColor=white)
+![ViewSonic](https://img.shields.io/badge/_-Certified_Trainer-990000?style=for-the-badge&logo=viewsonic&logoColor=990000&labelColor=white)
