@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eastin's Repositories</title>
+    <title>Eastin's Hub</title>
     
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -16,11 +19,21 @@
             <a href="https://shyutw.github.io/teec" target="_blank" class="nav-btn">🔗 前往 TEEC 專案</a>
         </div>
     </nav>
+
     <h1>🚀 My Code Repositories</h1>
     
     <div id="repo-container">
         <p style="text-align:center; width:100%;">正在載入專案資料...</p>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 初始化動畫設定
+        AOS.init({
+            duration: 800, // 動畫持續時間 0.8 秒
+            once: true,    // 每個卡片只執行動畫一次
+        });
+    </script>
 
 </body>
 </html>
