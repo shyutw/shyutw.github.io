@@ -1,5 +1,5 @@
-// ⚠️ 請將這裡的 "YOUR_GITHUB_USERNAME" 換成你真實的 GitHub 帳號名稱
-const username = 'YOUR_GITHUB_USERNAME';
+// GitHub 帳號名稱
+const username = 'shyutw';
 
 // 呼叫 GitHub API，並依照更新時間排序
 const apiUrl = `https://api.github.com/users/${username}/repos?sort=updated&per_page=100`;
