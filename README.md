@@ -7,7 +7,3 @@
 ![Microsoft](https://img.shields.io/badge/Microsoft-MIEE-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![GIGABYTE](https://img.shields.io/badge/GIGABYTE-Guest_Instructor-000000?style=for-the-badge&logo=gigabyte&logoColor=white)
 ![ViewSonic](https://img.shields.io/badge/ViewSonic-Certified_Trainer-990000?style=for-the-badge&logo=viewsonic&logoColor=white)
-
----
-- **Microsoft Innovative Educator Expert (MIEE)** - **Guest Instructor** @ GIGABYTE Technology
-- **Certified Global Trainer** @ ViewSonic
